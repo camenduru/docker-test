@@ -50,7 +50,6 @@ RUN curl https://get.modular.com | MODULAR_AUTH=$AUTH_KEY sh - \
 
 ARG MODULAR_HOME=/home/user/.modular
 ENV MODULAR_HOME=$MODULAR_HOME
-RUN chown -R user $MODULAR_HOME
 ENV PATH="$PATH:/opt/conda/bin:$MODULAR_HOME/pkg/packages.modular.com_mojo/bin"
 
 USER user
