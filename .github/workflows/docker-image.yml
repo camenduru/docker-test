@@ -33,5 +33,5 @@ jobs:
           no-cache: true
           build-args: AUTH_KEY=${{ secrets.MODULAR_AUTH_KEY }}
           push: true
-          tags: camenduru/test:latest
+          tags: camenduru/mojo:latest
 
