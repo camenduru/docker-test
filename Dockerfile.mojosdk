@@ -55,4 +55,4 @@ ENV PATH="$PATH:/opt/conda/bin:$MODULAR_HOME/pkg/packages.modular.com_mojo/bin"
 RUN conda init 
 RUN jupyter labextension disable "@jupyterlab/apputils-extension:announcements"
 USER user
-CMD ["jupyter", "lab", "--ip='*'", "--NotebookApp.token=''", "--NotebookApp.password=''","--allow-root"]
+CMD ["jupyter", "lab", "--ip='*'", "--NotebookApp.token=''", "--NotebookApp.password=''","--allow-root","--no-browser","--port=7860"]
