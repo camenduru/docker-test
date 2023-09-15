@@ -29,5 +29,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          file: ./Dockerfile.mojosdk
+          no-cache: true
+          build-args: AUTH_KEY=${{ secrets.MODULAR_AUTH_KEY }}
           push: true
           tags: camenduru/test:latest
