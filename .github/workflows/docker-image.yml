@@ -34,3 +34,4 @@ jobs:
           build-args: AUTH_KEY=${{ secrets.MODULAR_AUTH_KEY }}
           push: true
           tags: camenduru/test:latest
+
