@@ -47,7 +47,7 @@ ENV AUTH_KEY=$AUTH_KEY
 RUN curl https://get.modular.com | MODULAR_AUTH=$AUTH_KEY sh - \
     && modular install mojo
 
-ARG MODULAR_HOME="/root/.modular"
+ARG MODULAR_HOME="/home/user/.modular"
 ENV MODULAR_HOME=$MODULAR_HOME
 ENV PATH="$PATH:/opt/conda/bin:$MODULAR_HOME/pkg/packages.modular.com_mojo/bin"
 
